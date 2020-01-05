@@ -38,7 +38,7 @@ def draw_window(win, birds, pipes, base, score, gen):
 
     # bird
     for bird in birds:
-        bird.draw(win)
+        bird.draw(win, len(birds))
 
     # score
     score_text = STAT_FOMT.render("SCORE: " + str(score), 1, (255, 255, 255))

@@ -54,7 +54,9 @@ class Bird:
             if self.tilt > -90:
                 self.tilt -= self.ROT_VEL
 
-    def draw(self, win):
+    def draw(self, win, n):
+        p = n / 20
+        self.img.set_alpha(255 - (200 * p))
         self.img_count += 1
 
         # image logic
